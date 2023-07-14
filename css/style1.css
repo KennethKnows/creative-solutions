@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@1,300&family=Roboto+Mono:ital,wght@0,200;1,600&family=Rubik+Dirt&display=swap');
+
+* { 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  flex: row; 
+  height: 50px;
+  background-color: antiquewhite;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-brand {
+  padding-left: 50px;
+  font-weight: lighter;
+  font-size: 27px;
+  letter-spacing: 0.2em;
+  font-family: 'Rubik Dirt', cursive, italic, serif;
+  width: 100px;
+  height: 30px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.header {
+  background-image: url(../css/pic.jpg);
+  background-color: rgb(0, 0, 0); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header h1 {
+  word-spacing: 10px;
+  font-family: 'Rubik Dirt', cursive, italic, serif;
+  font-weight: lighter;
+  font-size: 100px;
+}
+
+.container {
+  margin: 100px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card .circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(70, 137, 238);
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(70, 137, 238);
+} 
+
+.card .text {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 180%;
+  color: black;
+  text-align: center;
+}
+/* @media only screen and (min-width: 400px) {
+    .nav {
+      flex-direction: column; /* Revert back to row layout 
+      transition: max-height;
+    }
+  } */
+
+@media only screen and (max-width: 767px) {
+  .header h1 {
+    display: flex;
+    width: 80%;
+    padding: 0;
+  }  
+  .nav {
+        flex-direction: column; /* Revert back to row layout */  
+        height: auto;
+    }
+  .nav-brand {
+    padding-left: 20px;
+    flex-direction: column;                                                                               
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    /* margin-right: 20px; */
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+  }
+
+  .header {
+    height: calc(100vh - 50px);
+  }
+
+  .container {
+    margin: 50px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
